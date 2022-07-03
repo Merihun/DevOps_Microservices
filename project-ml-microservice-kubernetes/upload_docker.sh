@@ -6,9 +6,11 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-
+export dockerpath="minuet/merihun-flask-app"
 # Step 2:  
 # Authenticate & tag
+docker login --username minuet
+docker tag merihun-flask-app $dockerpath
 echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
