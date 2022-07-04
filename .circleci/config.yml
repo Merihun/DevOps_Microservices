@@ -8,15 +8,16 @@ jobs:
     docker:
       # Use the same Docker base as the project
       - image: python:3.7.9-stretch
-    - run: 
-        name: print working directory
-        command: |
-          pwd
-          ls -la
-    working_directory: ~/repo/project-ml-microservice-kubernetes
+
+    # working_directory: ~/repo/project-ml-microservice-kubernetes
     steps:
       - checkout
       # Download and cache dependencies
+      - run:
+          name: print working directory
+          command: |
+            pwd
+            ls -la
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "requirements.txt" }}
