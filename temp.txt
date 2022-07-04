@@ -1,4 +1,11 @@
-RUN pip install --no-cache-dir requirements.txt
+Documentation: https://stackoverflow.com/questions/52277019/how-to-fix-vm-issue-with-minikube-start
+🍿  Related issues:
+    ▪ https://github.com/kubernetes/minikube/issues/3614
+    ▪ https://github.com/kubernetes/minikube/issues/4222
+    ▪ https://github.com/kubernetes/minikube/issues/5817
 
-RUN pip install --upgrade pip &&\
-    pip install --trusted-host pypi.python.org -r requirements.txt
+    https://stackoverflow.com/questions/66016567/how-to-uninstall-minikube-from-ubuntu-i-get-an-unable-to-load-cached-images-e
+    https://issuehint.com/issue/kubernetes/minikube/14207
+
+
+    https://minikube.sigs.k8s.io/docs/drivers/virtualbox/
